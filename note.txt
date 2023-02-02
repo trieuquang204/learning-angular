@@ -16,3 +16,11 @@ course: https://www.youtube.com/watch?v=RDytR8arAJk&list=PL1BztTYDF-QNrtkvjkT6Wj
 
 8: Creating custom component:
 src\styles.css: style global của dự án
+
+11: Using Bootstrap in Angular
+- npm install --save bootstrap
+- file angular.json khai báo thêm style
+ "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+      ],
