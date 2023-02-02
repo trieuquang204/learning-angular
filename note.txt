@@ -55,3 +55,17 @@ Pass data ở dạng một chiều từ component class sang hiển thị ngoài
 16: What is Event Binding
 - Cho phép chúng ta lắng nghe và phản hồi lại với những sự kiện từ người dùng. Ta có thể pass dữ liệu từ view sang component class.
 
+
+17: Two way data binding | ngModel
+- Dùng để đồng bộ dữ liệu giữa component & view
+
+* import { FormsModule } from '@angular/forms';
+
+ imports: [
+    BrowserModule,
+    FormsModule
+  ],
+
+File template: <input type="text" [(ngModel)]="searchValue">
+file class component: searchValue? : string;
+

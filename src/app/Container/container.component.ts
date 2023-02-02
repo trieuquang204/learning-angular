@@ -27,7 +27,10 @@ export class ContainerComponent implements OnInit  {
   // slogan: string = 'Hiho some text';
   // source: string = "/assets/11.jpg";
 
-  changeValue(eventData: Event) {
-    console.log('eventData', (<HTMLInputElement>eventData.target).value)
-  }
+  // changeValue(eventData: Event) {
+  //   console.log('eventData', (<HTMLInputElement>eventData.target).value)
+  // }
+
+
+  searchValue? : string = "quang hiii";
 }

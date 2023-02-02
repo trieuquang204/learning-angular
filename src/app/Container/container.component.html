@@ -3,4 +3,7 @@
 <img [src]="source" alt="img"> -->
 
 
-<input type="text" (input)="changeValue($event)">
+<!-- <input type="text" (input)="changeValue($event)"> -->
+
+<input type="text" [(ngModel)]="searchValue">
+<span>{{ searchValue }}</span>
