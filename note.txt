@@ -45,3 +45,9 @@ Pass data ở dạng một chiều từ component class sang hiển thị ngoài
 - Property binding: [property] = data
 
 * Two way data binding: Data được dàng buộc và đồng bộ giữa class component và view template
+
+
+
+14: What is String Interpolation
+- String Interpolation được sử dụng để liên kết dữ liệu từ component class sang view template. Luồng data được truyền từ component sang view. Dùng cho one way data binding.
+

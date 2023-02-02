@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   // selector: 'app-container',
@@ -15,6 +15,14 @@ import { Component } from "@angular/core";
   // styles: ["h1{color: red; background: blue; text-align: center }", ".para{color: blue; background: #000; margin-top: 20px }"]
   styleUrls: ['./container.component.css']
 })
-export class ContainerComponent {
+export class ContainerComponent implements OnInit  {
+  constructor() {
 
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  slogan: string = 'Hiho some text';
 }
