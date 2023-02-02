@@ -51,3 +51,7 @@ Pass data ở dạng một chiều từ component class sang hiển thị ngoài
 14: What is String Interpolation
 - String Interpolation được sử dụng để liên kết dữ liệu từ component class sang view template. Luồng data được truyền từ component sang view. Dùng cho one way data binding.
 
+
+16: What is Event Binding
+- Cho phép chúng ta lắng nghe và phản hồi lại với những sự kiện từ người dùng. Ta có thể pass dữ liệu từ view sang component class.
+
