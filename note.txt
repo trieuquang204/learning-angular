@@ -81,3 +81,7 @@ file class component: searchValue? : string;
 19: ngFor Directive in Angular | Directives (Structural directive)
 
 20: ngStyle Directive in Angular ( Atribute directive ) : Thay đổi kiểu dáng và hành vi của một phần tử html k sử dụng dom để thêm hay xóa phần tử element.
+
+21: ngIf Directive (Structural directive)
+
+22: ngClass Directive: ( Atribute directive )

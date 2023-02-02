@@ -14,10 +14,15 @@
 </div> -->
 
 
-<div *ngFor="let item of products">
+<!-- <div *ngFor="let item of products">
  <div [ngStyle]="{backgroundColor: 'red'}">
   <span [ngStyle]="{color: item.status ? 'blue' : 'black'}">{{ item.name }}</span>
   <span>{{ item.status }}</span>
   <br>
  </div>
+</div> -->
+
+
+<div [ngClass]="{changeBg: test}">
+  <input type="text">
 </div>
