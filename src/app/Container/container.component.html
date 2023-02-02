@@ -9,6 +9,15 @@
 <span>{{ searchValue }}</span> -->
 
 
-<div *ngFor="let item of [1, 2, 3]">
+<!-- <div *ngFor="let item of [1, 2, 3]">
   <p>item is : {{ item }}</p>
+</div> -->
+
+
+<div *ngFor="let item of products">
+ <div [ngStyle]="{backgroundColor: 'red'}">
+  <span [ngStyle]="{color: item.status ? 'blue' : 'black'}">{{ item.name }}</span>
+  <span>{{ item.status }}</span>
+  <br>
+ </div>
 </div>

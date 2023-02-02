@@ -78,5 +78,6 @@ file class component: searchValue? : string;
 - Atribute directive: Được sử dụng như một thuộc tính trên phần tử trang web hiện có để thay đổi giao diện và hành vi của nó.
 
 
-19: ngFor Directive in Angular | Directives
+19: ngFor Directive in Angular | Directives (Structural directive)
 
+20: ngStyle Directive in Angular ( Atribute directive ) : Thay đổi kiểu dáng và hành vi của một phần tử html k sử dụng dom để thêm hay xóa phần tử element.

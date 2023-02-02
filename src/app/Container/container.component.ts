@@ -32,5 +32,10 @@ export class ContainerComponent implements OnInit  {
   // }
 
 
-  searchValue? : string = "quang hiii";
+  // searchValue? : string = "quang hiii";
+  products = [
+    {id: 1, name: "name 1", price: 10, color: 'red', status: true},
+    {id: 2, name: "name 2", price: 90, color: 'blue', status: false},
+    {id: 3, name: "name 3", price: 80, color: 'black', status: true},
+  ]
 }
