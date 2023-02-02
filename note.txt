@@ -69,3 +69,11 @@ Pass data ở dạng một chiều từ component class sang hiển thị ngoài
 File template: <input type="text" [(ngModel)]="searchValue">
 file class component: searchValue? : string;
 
+
+18: What is Directives? ngIf, ngFor, ngStyle...
+- Dùng directives là dạng logic để nói với trình duyệt rằng phần hiển thị nào sẽ được hiển thị trên trình duyệt.
+* Component: Dùng component để nói với trình duyệt rằng những gì sẽ được hiển thị ra ngoài trang web.
+
+- Structural directive: Thay đổi phần hiển thị ngoài trang web bởi thêm hoặc xóa DOM element.
+- Atribute directive: Được sử dụng như một thuộc tính trên phần tử trang web hiện có để thay đổi giao diện và hành vi của nó.
+
