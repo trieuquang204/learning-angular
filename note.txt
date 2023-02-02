@@ -100,3 +100,6 @@ file class component: searchValue? : string;
 - Truyền dữ liệu từ component cha xuống component con sử dụng @Input decorator.
 
 27: Template Reference Variable
+
+
+28: @ViewChild in Angular

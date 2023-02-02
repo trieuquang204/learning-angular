@@ -1,3 +1,17 @@
 <!-- <app-container></app-container> -->  <!-- Dung template nhu tag -->
 <!-- <div app-container></div> -->   <!-- Dung template nhu attribute -->
-<div class="app-container"></div>  <!--  Dung template nhu class   -->
+<!-- <div class="app-container"></div>   Dung template nhu class   -->
+
+<div class="container">
+  <div>
+    <input type="date" #dobInput (blur)="calculateAge()">
+</div>
+<div>
+    <label for="">Age</label>
+    <input type="text" #ageInput>
+</div>
+
+</div>
+
+<div class="app-container"></div>
+{{ containerComp.sayHello() }}
