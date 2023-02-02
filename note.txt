@@ -109,3 +109,12 @@ file class component: searchValue? : string;
 30: ng-content in Angular
 - Được sử dụng để chèn nội dung động vào bên trong component
 - Nếu có hai ng-content đc sử dụng nó sẽ fill nội dung vào ng-content cuối cùng của template
+
+31:Angular Life Cycle Hooks
+- Khi một component mới đc tạo và khi nó tìm thấy một selector nó sẽ khởi tạo một version mới của component đó sau đó sẽ đc add vào dom.
+- Ví dụ
+<app-container></app-container>
+<app-container></app-container>
+<app-container></app-container>
+
+angular sẽ khởi tạo app container component 3 lần. Khởi tạo class component đó. Khi class component mới đc khởi tạo angular sẽ trải qua các giai đoạn khác nhau trong tiến trình khởi tạo đó. Ta có thể can thiệp vào quá trình khởi tạo đó qua một vài phương thức mà angular gọi là Life Cycle Hooks
