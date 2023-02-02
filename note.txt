@@ -77,3 +77,6 @@ file class component: searchValue? : string;
 - Structural directive: Thay đổi phần hiển thị ngoài trang web bởi thêm hoặc xóa DOM element.
 - Atribute directive: Được sử dụng như một thuộc tính trên phần tử trang web hiện có để thay đổi giao diện và hành vi của nó.
 
+
+19: ngFor Directive in Angular | Directives
+

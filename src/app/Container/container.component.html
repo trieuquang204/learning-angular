@@ -5,5 +5,10 @@
 
 <!-- <input type="text" (input)="changeValue($event)"> -->
 
-<input type="text" [(ngModel)]="searchValue">
-<span>{{ searchValue }}</span>
+<!-- <input type="text" [(ngModel)]="searchValue">
+<span>{{ searchValue }}</span> -->
+
+
+<div *ngFor="let item of [1, 2, 3]">
+  <p>item is : {{ item }}</p>
+</div>
