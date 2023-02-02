@@ -33,3 +33,15 @@ src\styles.css: style global của dự án
 selector: '[app-container]',
 
 - Sử dung: <div app-container></div>
+
+
+13: What is data binding
+- Cho phép chúng ta liên kết dữ liệu giữa component class và view template html của nó.
+
+* One way data binding: Chúng ta có thể access component class property từ template của chính nó. Data flow from component to class view template.
+Pass data ở dạng một chiều từ component class sang hiển thị ngoài template hoặc ngược lại!
+
+- String interpolation: {{ data }}
+- Property binding: [property] = data
+
+* Two way data binding: Data được dàng buộc và đồng bộ giữa class component và view template
