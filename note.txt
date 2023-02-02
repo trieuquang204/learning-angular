@@ -103,3 +103,5 @@ file class component: searchValue? : string;
 
 
 28: @ViewChild in Angular
+
+29: What is View Encapsulation in Angular

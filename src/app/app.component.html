@@ -1,17 +1,6 @@
-<!-- <app-container></app-container> -->  <!-- Dung template nhu tag -->
-<!-- <div app-container></div> -->   <!-- Dung template nhu attribute -->
-<!-- <div class="app-container"></div>   Dung template nhu class   -->
+<div class="container" [ngStyle]="{background: 'yellow', padding: '40px', marginTop: '30px'}">
+  <h1>app component </h1>
+  <button>Button cua app component</button>
 
-<div class="container">
-  <div>
-    <input type="date" #dobInput (blur)="calculateAge()">
+  <app-container></app-container>
 </div>
-<div>
-    <label for="">Age</label>
-    <input type="text" #ageInput>
-</div>
-
-</div>
-
-<div class="app-container"></div>
-{{ containerComp.sayHello() }}

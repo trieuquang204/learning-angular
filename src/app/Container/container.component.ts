@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  // selector: 'app-container',
+  selector: 'app-container',
   // selector: '[app-container]',
-  selector: '.app-container',
+  // selector: '.app-container',
   templateUrl: './container.component.html',
   // template: `
   //   <div>

@@ -1,10 +1,12 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+// import {  } from '@angular/compiler';
+import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ContainerComponent } from './Container/container.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'learning-angular';
@@ -18,7 +20,5 @@ export class AppComponent {
     let currentYear = new Date().getFullYear()
     let age = currentYear - birthYear;
     this.age.nativeElement.value = age;
-    // console.log('date', this.dateOfBirth)
-    // console.log('age', this.age)
   }
 }
