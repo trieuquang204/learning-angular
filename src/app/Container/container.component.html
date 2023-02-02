@@ -23,6 +23,16 @@
 </div> -->
 
 
-<div [ngClass]="{changeBg: test}">
+<!-- <div [ngClass]="{changeBg: test}">
   <input type="text">
-</div>
+</div> -->
+
+
+<!-- <input type="text" #myVariable (keyup)="0">
+<button (click)="sayHello(myVariable)">Test</button> -->
+<!-- <p>{{ myVariable.value }}</p> -->
+
+<app-custom-list #test></app-custom-list>
+<p>You have selected: {{ test.selectedCustomer?.name }}</p>
+<app-demo #quang></app-demo>
+<span>{{quang.test }}</span>

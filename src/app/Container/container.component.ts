@@ -39,5 +39,9 @@ export class ContainerComponent implements OnInit  {
   //   {id: 3, name: "name 3", price: 80, color: 'black', status: true},
   // ]
 
-  test : boolean = true;
+  // test : boolean = true;
+
+  sayHello(inputElm : HTMLInputElement) {
+    console.log('inputElm', inputElm.value)
+  }
 }

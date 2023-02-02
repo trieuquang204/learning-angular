@@ -1,3 +1,9 @@
+"compilerOptions": {
+    "strictPropertyInitialization": false,
+    ...
+}
+
+
 course: https://www.youtube.com/watch?v=RDytR8arAJk&list=PL1BztTYDF-QNrtkvjkT6Wjc8es7QB4Gty&index=5
 6: How angular app works:
 - Trình duyệt ban đầu sẽ load trang index.html. Index html là trang singe page application sẽ được gender nội dung động bên trong.
@@ -85,3 +91,12 @@ file class component: searchValue? : string;
 21: ngIf Directive (Structural directive)
 
 22: ngClass Directive: ( Atribute directive )
+
+
+23: What is Child Component
+
+
+24: Custom Property Binding
+- Truyền dữ liệu từ component cha xuống component con sử dụng @Input decorator.
+
+27: Template Reference Variable
