@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './Container/container.component';
-import { DemoComponent } from './Demo/demo/demo.component';
+import { DemoComponent } from './Demo/demo.component';
 import { CustomListComponent } from './Custom-list/custom-list.component';
 
 @NgModule({

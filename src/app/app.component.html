@@ -1,17 +1,8 @@
 <div class="container">
- <div class="row">
-  <div class="col-md-6">
-    <h1>Title from app component</h1>
+  <input type="text" #input>
+  <button (click)="onSubmit(input)">Submit</button>
 
-    <div class="products">
-      <app-container>
-        <h4>Content chem them</h4>
-      </app-container>
-      <app-container>
-        <p class="test2">Some text</p>
-        <span class="title">hiii</span>
-      </app-container>
-    </div>
-  </div>
- </div>
+  <app-demo [value]="inputText"></app-demo>
+
+  <p>Hien thi value tu component cha: {{ inputText }}</p>
 </div>
