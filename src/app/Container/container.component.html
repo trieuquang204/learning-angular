@@ -1,43 +1,6 @@
-<!-- <h1>Container component.</h1>
-<p>{{ slogan }}</p>
-<img [src]="source" alt="img"> -->
-
-
-<!-- <input type="text" (input)="changeValue($event)"> -->
-
-<!-- <input type="text" [(ngModel)]="searchValue">
-<span>{{ searchValue }}</span> -->
-
-
-<!-- <div *ngFor="let item of [1, 2, 3]">
-  <p>item is : {{ item }}</p>
-</div> -->
-
-
-<!-- <div *ngFor="let item of products">
- <div [ngStyle]="{backgroundColor: 'red'}">
-  <span [ngStyle]="{color: item.status ? 'blue' : 'black'}">{{ item.name }}</span>
-  <span>{{ item.status }}</span>
-  <br>
- </div>
-</div> -->
-
-
-<!-- <div [ngClass]="{changeBg: test}">
-  <input type="text">
-</div> -->
-
-
-<!-- <input type="text" #myVariable (keyup)="0">
-<button (click)="sayHello(myVariable)">Test</button> -->
-<!-- <p>{{ myVariable.value }}</p> -->
-
-<!-- <app-custom-list #test></app-custom-list>
-<p>You have selected: {{ test.selectedCustomer?.name }}</p>
-<app-demo #quang></app-demo>
-<span>{{quang.test }}</span> -->
-
-<div [ngStyle]="{background: 'blue', padding: '50px'}">
-  <h1>app container</h1>
-  <button>Button cua app container</button>
+<div class="card">
+  <h4 class="title">TItle</h4>
+  <ng-content select=".title"></ng-content>
+  <button class="btn btn-primary">Show more</button>
+  <ng-content select=".test2"></ng-content>
 </div>

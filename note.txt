@@ -105,3 +105,7 @@ file class component: searchValue? : string;
 28: @ViewChild in Angular
 
 29: What is View Encapsulation in Angular
+
+30: ng-content in Angular
+- Được sử dụng để chèn nội dung động vào bên trong component
+- Nếu có hai ng-content đc sử dụng nó sẽ fill nội dung vào ng-content cuối cùng của template
