@@ -1,0 +1,2 @@
+course: https://www.youtube.com/watch?v=RDytR8arAJk&list=PL1BztTYDF-QNrtkvjkT6Wjc8es7QB4Gty&index=5
+5, What is TypeScript:
