@@ -1,2 +1,6 @@
 course: https://www.youtube.com/watch?v=RDytR8arAJk&list=PL1BztTYDF-QNrtkvjkT6Wjc8es7QB4Gty&index=5
-5, What is TypeScript:
+6: How angular app works:
+- Trình duyệt ban đầu sẽ load trang index.html. Index html là trang singe page application sẽ được gender nội dung động bên trong.
+- Khi chạy angular app file đầu tiên được thực thi là file main.ts. Angular sẽ load AppModule và mọi thứ bắt đầu từ đó.
+- Viewsource index.html ngoài trình duyệt sẽ đc inject thêm một đoạn scrip. Đoạn scrip này đc inject tự động bởi angular cli vào file index.html. Vì vậy mỗi khi run ng serve câu lệnh này sẽ rebuild project và nó sẽ tạo js bundles và đc thêm tự động vào file index.
+- main.ts => app module => app component ts => app component template => render content index.html
