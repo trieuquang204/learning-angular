@@ -24,3 +24,12 @@ src\styles.css: style global của dự án
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
       ],
+- Tắt app chạy lại ng serve
+
+
+
+12: Different Selectors in Angular
+- Trong file component.ts
+selector: '[app-container]',
+
+- Sử dung: <div app-container></div>
