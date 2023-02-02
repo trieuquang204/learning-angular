@@ -4,3 +4,11 @@ course: https://www.youtube.com/watch?v=RDytR8arAJk&list=PL1BztTYDF-QNrtkvjkT6Wj
 - Khi chạy angular app file đầu tiên được thực thi là file main.ts. Angular sẽ load AppModule và mọi thứ bắt đầu từ đó.
 - Viewsource index.html ngoài trình duyệt sẽ đc inject thêm một đoạn scrip. Đoạn scrip này đc inject tự động bởi angular cli vào file index.html. Vì vậy mỗi khi run ng serve câu lệnh này sẽ rebuild project và nó sẽ tạo js bundles và đc thêm tự động vào file index.
 - main.ts => app module => app component ts => app component template => render content index.html
+
+7: Component
+- Là một class type scrip: Được khai báo với @Component decorator
+- Là một tính năng, thành phần xây dựng lên khối giao diện trong angular app:
+- Bao gồm:
++ Một template html: Khai báo những gì sẽ được hiển thị ngoài trang web
++ Một lớp class type scrip: The UI logic
++ Một bộ chọn css: Được sử dụng để style cho template html của component đó.
