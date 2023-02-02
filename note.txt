@@ -12,3 +12,7 @@ course: https://www.youtube.com/watch?v=RDytR8arAJk&list=PL1BztTYDF-QNrtkvjkT6Wj
 + Một template html: Khai báo những gì sẽ được hiển thị ngoài trang web
 + Một lớp class type scrip: The UI logic
 + Một bộ chọn css: Được sử dụng để style cho template html của component đó.
+
+
+8: Creating custom component:
+src\styles.css: style global của dự án
