@@ -7,12 +7,15 @@ import { ContainerComponent } from './Container/container.component';
 import { DemoComponent } from './Demo/demo.component';
 import { CustomListComponent } from './Custom-list/custom-list.component';
 
+import { SetBackgroundDirective } from './CustomDirective/setbackground.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent,
     DemoComponent,
     CustomListComponent,
+    SetBackgroundDirective,
   ],
   imports: [
     BrowserModule,

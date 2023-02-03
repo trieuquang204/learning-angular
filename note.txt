@@ -120,4 +120,17 @@ file class component: searchValue? : string;
 angular sẽ khởi tạo app container component 3 lần. Khởi tạo class component đó. Khi class component mới đc khởi tạo angular sẽ trải qua các giai đoạn khác nhau trong tiến trình khởi tạo đó. Ta có thể can thiệp vào quá trình khởi tạo đó qua một vài phương thức mà angular gọi là Life Cycle Hooks
 
 - Khi ứng dụng angular đc chạy đầu tiên nó sẽ khởi tạo và render root component rồi khởi tạo và render các Children & their children. Nó tạo thành một cây component
-- Khi angular load component nó bắt đầu tiến trình sử lý và rendering the view.
+- Khi angular load component nó bắt đầu tiến trình sử lý và rendering the view. Để làm điều đó nó cần check input properties, data bindings & expressions,
+
+
+
+34: Custom Attribute Directive
+- Tạo file .directive.ts
+
+import { Directive } from "@angular/core";
+
+@Directive({
+  selector: '[setBackground]'
+})
+
++ Khai báo trong declarations của app module
