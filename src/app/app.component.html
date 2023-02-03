@@ -1,17 +1,29 @@
-<div class="container">
- <div class="row">
-  <div class="col-md-6">
-    <h1>Title from app component</h1>
+<!-- <h1 class="">App comp title</h1> -->
 
-    <div class="products">
-      <app-container>
-        <h4>Content chem them</h4>
-      </app-container>
-      <app-container>
-        <p class="test2">Some text</p>
-        <span class="title">hiii</span>
-      </app-container>
-    </div>
-  </div>
- </div>
+<!-- <div class="container setBackground">
+  <p>app component</p>
 </div>
+
+
+<div class="container" appHighlight>
+  <p>app component</p>
+</div>
+
+<div class="container" appHighlight appHover>
+  <p>app component</p>
+</div> -->
+
+
+<!-- <div class="container" appHostBinding [defaultColor]="'yellow'" [highlightColor]="'white'">
+  <p>app component</p>
+</div> -->
+
+
+<!-- <div class="container" [appHostBinding]="'red'" [defaultColor]="'yellow'"  [ngStyle]="">
+  <p>app component</p>
+</div> -->
+
+<div [appClassCustom]="{class1: true, class2 : true}">
+  <p>app component</p>
+</div>
+
