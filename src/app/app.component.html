@@ -14,7 +14,12 @@
 </div> -->
 
 
-<div class="container" appHostBinding>
+<!-- <div class="container" appHostBinding [defaultColor]="'yellow'" [highlightColor]="'white'">
+  <p>app component</p>
+</div> -->
+
+
+<div class="container" [appHostBinding]="'red'" [defaultColor]="'yellow'"  [ngStyle]="">
   <p>app component</p>
 </div>
 
