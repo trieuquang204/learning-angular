@@ -134,3 +134,7 @@ import { Directive } from "@angular/core";
 })
 
 + Khai báo trong declarations của app module
+
+
+36: @HostListner
+- Lắng nghe sự kiện trên dom và phản ứng với những sự kiện đó thông qua các phương thức sử lý
