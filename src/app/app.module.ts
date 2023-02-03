@@ -11,6 +11,7 @@ import { SetBackgroundDirective } from './CustomDirective/setbackground.directiv
 import { HighlightDirective } from './CustomDirective/highlight.directive';
 import { HoverDirective } from './CustomDirective/hover.directive';
 import { HostBindingDirective } from './CustomDirective/host-binding.directive';
+import { ClassCustomDirective } from './CustomDirective/class-custom.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HostBindingDirective } from './CustomDirective/host-binding.directive';
     HighlightDirective,
     HoverDirective,
     HostBindingDirective,
+    ClassCustomDirective,
   ],
   imports: [
     BrowserModule,

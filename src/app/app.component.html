@@ -19,7 +19,11 @@
 </div> -->
 
 
-<div class="container" [appHostBinding]="'red'" [defaultColor]="'yellow'"  [ngStyle]="">
+<!-- <div class="container" [appHostBinding]="'red'" [defaultColor]="'yellow'"  [ngStyle]="">
+  <p>app component</p>
+</div> -->
+
+<div [appClassCustom]="{class1: true, class2 : true}">
   <p>app component</p>
 </div>
 
