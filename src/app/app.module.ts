@@ -10,6 +10,7 @@ import { CustomListComponent } from './Custom-list/custom-list.component';
 import { SetBackgroundDirective } from './CustomDirective/setbackground.directive';
 import { HighlightDirective } from './CustomDirective/highlight.directive';
 import { HoverDirective } from './CustomDirective/hover.directive';
+import { HostBindingDirective } from './CustomDirective/host-binding.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HoverDirective } from './CustomDirective/hover.directive';
     SetBackgroundDirective,
     HighlightDirective,
     HoverDirective,
+    HostBindingDirective,
   ],
   imports: [
     BrowserModule,
