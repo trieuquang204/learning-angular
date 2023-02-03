@@ -8,6 +8,7 @@ import { DemoComponent } from './Demo/demo.component';
 import { CustomListComponent } from './Custom-list/custom-list.component';
 
 import { SetBackgroundDirective } from './CustomDirective/setbackground.directive';
+import { HighlightDirective } from './CustomDirective/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SetBackgroundDirective } from './CustomDirective/setbackground.directiv
     DemoComponent,
     CustomListComponent,
     SetBackgroundDirective,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
