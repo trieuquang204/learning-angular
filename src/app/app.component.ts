@@ -9,13 +9,10 @@ import { ContainerComponent } from './Container/container.component';
 })
 export class AppComponent {
   inputText : string = 'initialization app';
-  destroy: boolean = true;
 
   onSubmit(inputElm : HTMLInputElement) {
     this.inputText = inputElm.value;
   }
 
-  destroyComponent() {
-    this.destroy = false;
-  }
+
 }
