@@ -2,7 +2,12 @@
   <input type="text" #input>
   <button (click)="onSubmit(input)">Submit</button>
 
-  <app-demo [value]="inputText"></app-demo>
+  <app-demo [value]="inputText" *ngIf="destroy">
+    <h4>Title inside ng content {{ inputText }}</h4>
+  </app-demo>
+  <br>
+  <br>
 
-  <p>Hien thi value tu component cha: {{ inputText }}</p>
+  <button (click)="destroyComponent()">Destroy</button>
+
 </div>
