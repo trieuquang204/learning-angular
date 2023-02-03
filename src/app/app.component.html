@@ -1,29 +1,33 @@
-<!-- <h1 class="">App comp title</h1> -->
+<button class="btn btn-notice" (click)="displayNotice()">Show notice</button>
 
-<!-- <div class="container setBackground">
-  <p>app component</p>
+<!-- <div class="info-container notice" *ngIf="display">
+  <h3>This is important notice</h3>
+  <p>This is some text</p>
+</div> -->
+
+<!-- <ng-template [ngIf]="display">
+  <div class="info-container notice">
+    <h3>This is important notice</h3>
+    <p>This is some text</p>
+  </div>
+</ng-template> -->
+
+
+<!-- <div class="info-container notice" *ngIf="display; else myVar">
+  <h3>This is important notice</h3>
+  <p>This is some text</p>
 </div>
 
 
-<div class="container" appHighlight>
-  <p>app component</p>
-</div>
+-->
 
-<div class="container" appHighlight appHover>
-  <p>app component</p>
-</div> -->
+<ng-template #myVar>
+  <p>This is tets</p>
+</ng-template>
 
-
-<!-- <div class="container" appHostBinding [defaultColor]="'yellow'" [highlightColor]="'white'">
-  <p>app component</p>
-</div> -->
-
-
-<!-- <div class="container" [appHostBinding]="'red'" [defaultColor]="'yellow'"  [ngStyle]="">
-  <p>app component</p>
-</div> -->
-
-<div [appClassCustom]="{class1: true, class2 : true}">
-  <p>app component</p>
-</div>
-
+<ng-template [ngIf]="display" [ngIfElse]="myVar">
+  <div class="info-container notice">
+    <h3>This is important notice</h3>
+    <p>This is some text</p>
+  </div>
+</ng-template>

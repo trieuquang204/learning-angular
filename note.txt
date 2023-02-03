@@ -138,3 +138,9 @@ import { Directive } from "@angular/core";
 
 36: @HostListner
 - Lắng nghe sự kiện trên dom và phản ứng với những sự kiện đó thông qua các phương thức sử lý
+
+
+42: How Structural Directive Works
+- Tại sao cần sử dụng dấu * trước ngIf:
+- Dấu * nói với angular rằng directive là Structural directive sau đó angular sẽ khởi tạo một template là <ng-template>
+</ng-template> wrap content bên trong ngIf
