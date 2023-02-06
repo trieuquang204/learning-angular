@@ -168,4 +168,8 @@ import { Directive } from "@angular/core";
 
 
 50: Injecting Service into another Service
-- Injectable
+- @Injectable() nói với angular rằng something can be injected in here.
+
+
+52: What is Observable
+- Thực hiện các hoạt động k đồng bộ và sử lý dữ liệu k đồng bộ

@@ -21,7 +21,4 @@ export class DemoComponent implements OnInit  {
       this.user = data;
     })
   }
-
-
-
 }
