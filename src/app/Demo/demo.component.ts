@@ -6,22 +6,18 @@ import { Component, OnInit, Input, ContentChild, ElementRef, AfterContentInit } 
   styleUrls: ['./demo.component.css']
 })
 export class DemoComponent implements OnInit  {
-  @Input() value : string = 'initialization demo';
+  title = "Angular";
 
   constructor() {
     console.log('constructor')
   }
 
   ngOnInit(): void {
-    console.log('paraElm', this.paraElm)
+    // console.log('paraElm', this.paraElm)
   }
 
-  ngAfterContentInit() {
-    // console.log('paraElm after', this.paraElm.nativeElement.textContent)
-    this.paraElm.nativeElement.textContent = "new value"
+  onEnroll() {
+    alert('Thanks for ' + this.title + ' course')
   }
-
-  @ContentChild('paragraph') paraElm : ElementRef;
-
 
 }

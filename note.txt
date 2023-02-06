@@ -148,3 +148,8 @@ import { Directive } from "@angular/core";
 
 44: ngSwitch (Structural directive)
 - Là Structural directive nhưng không sử dụng dấu * đằng trước [ngSwitch] vì nó k thao tác add or remote dom.
+
+
+
+45: Services in Angular
+- Services là một type script có thể tái sử dụng, có thể được sử dụng trong nhiều component trong angular app.
