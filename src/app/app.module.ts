@@ -12,6 +12,7 @@ import { HighlightDirective } from './CustomDirective/highlight.directive';
 import { HoverDirective } from './CustomDirective/hover.directive';
 import { HostBindingDirective } from './CustomDirective/host-binding.directive';
 import { ClassCustomDirective } from './CustomDirective/class-custom.directive';
+import { IfDirective } from './CustomDirective/if.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ClassCustomDirective } from './CustomDirective/class-custom.directive';
     HoverDirective,
     HostBindingDirective,
     ClassCustomDirective,
+    IfDirective,
   ],
   imports: [
     BrowserModule,

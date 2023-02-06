@@ -1,33 +1,5 @@
-<button class="btn btn-notice" (click)="displayNotice()">Show notice</button>
+<button (click)="displayNotice()">SHow</button>
 
-<!-- <div class="info-container notice" *ngIf="display">
-  <h3>This is important notice</h3>
-  <p>This is some text</p>
-</div> -->
-
-<!-- <ng-template [ngIf]="display">
-  <div class="info-container notice">
-    <h3>This is important notice</h3>
-    <p>This is some text</p>
-  </div>
-</ng-template> -->
-
-
-<!-- <div class="info-container notice" *ngIf="display; else myVar">
-  <h3>This is important notice</h3>
+<div class="test" *appIf="display">
   <p>This is some text</p>
 </div>
-
-
--->
-
-<ng-template #myVar>
-  <p>This is tets</p>
-</ng-template>
-
-<ng-template [ngIf]="display" [ngIfElse]="myVar">
-  <div class="info-container notice">
-    <h3>This is important notice</h3>
-    <p>This is some text</p>
-  </div>
-</ng-template>
