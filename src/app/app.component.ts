@@ -1,21 +1,26 @@
-import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
-import { ContainerComponent } from './Container/container.component';
+import { Component, OnInit } from '@angular/core';
 
-import { EnrollService } from './Services/enroll.service';
+import { UserService } from './Services/user.service';
+
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [EnrollService]
+  providers: [UserService]
 })
-export class AppComponent {
-  inputText : string = 'initialization app';
+export class AppComponent implements OnInit {
+  inputText : string = 'User service';
 
-  constructor(private enrollService : EnrollService) {
+  constructor(private userService : UserService) {
 
   }
 
+  users: {name: string, status: string}[] = []
 
+
+  ngOnInit() {
+     this.users = this.userService.users;
+  }
 }

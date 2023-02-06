@@ -1,5 +1,16 @@
-<div class="container">
-  <h3>{{ title }} course </h3>
+<form action="">
+  <div>
+    <input type="text" placeholder="user name" [(ngModel)]="username" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div>
+    <select name="status" id="status" [(ngModel)]="status" [ngModelOptions]="{standalone: true}">
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+  </div>
+  <div>
+    <button (click)="addUser()">Create User</button>
+  </div>
+</form>
 
-  <button (click)="onEnroll()">Enroll</button>
-</div>
+

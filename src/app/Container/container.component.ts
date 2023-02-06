@@ -1,29 +1,31 @@
 import { Component, OnInit } from "@angular/core";
-import { EnrollService } from "../Services/enroll.service";
+
+import { UserService } from "../Services/user.service";
 
 @Component({
   selector: 'app-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.css'],
+  // providers: [UserService]
+  // Khai báo ở đây sẽ bị overright UserService trong app => user k add đc
 })
 export class ContainerComponent implements OnInit  {
-  title = "Java script";
+  username: string = '';
+  status: string = 'active';
 
-  constructor(private enrollService : EnrollService) {
+  public testttt : string = '';
+
+  constructor(private userService : UserService) {
 
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
 
   }
 
-  // onEnroll() {
-  //   alert('Thanks for ' + this.title + ' course')
-  // }
-
-  onEnroll() {
-    // const enrollService = new EnrollService();
-    this.enrollService.onEnrollClicked(this.title);
+  addUser() {
+    this.userService.addNewUser(this.username, this.status);
+    console.log(this.userService.users)
   }
 
 }
