@@ -19,12 +19,22 @@ export class AppComponent implements OnInit {
     setTimeout(() => {
       observer.next("1")
     }, 1000);
+
     setTimeout(() => {
       observer.next("2")
     }, 2000);
+
+    // setTimeout(() => {
+    //   observer.error(new Error('Something wrong'))
+    // }, 2000);
+
     setTimeout(() => {
       observer.next("3")
     }, 3000);
+
+    setTimeout(() => {
+      observer.complete()
+    }, 4000);
 
     // console.log('start')
     // observer.next("1")
@@ -37,6 +47,10 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.myObservable.subscribe((val) => {
       console.log('val', val)
+    }, (error ) => {
+      alert(error.message)
+    }, () => {
+      alert('complete')
     })
   }
 }

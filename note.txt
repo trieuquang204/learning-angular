@@ -173,3 +173,6 @@ import { Directive } from "@angular/core";
 
 52: What is Observable
 - Thực hiện các hoạt động k đồng bộ và sử lý dữ liệu k đồng bộ
+
+
+53: Error & Completion of Observable
