@@ -5,12 +5,13 @@ import { EnrollService } from "../Services/enroll.service";
 @Component({
   selector: 'app-container',
   templateUrl: './container.component.html',
-  styleUrls: ['./container.component.css']
+  styleUrls: ['./container.component.css'],
+  providers: [EnrollService]
 })
 export class ContainerComponent implements OnInit  {
   title = "Java script";
 
-  constructor() {
+  constructor(private enrollService : EnrollService) {
 
   }
 
@@ -23,8 +24,8 @@ export class ContainerComponent implements OnInit  {
   // }
 
   onEnroll() {
-    const enrollService = new EnrollService();
-    enrollService.onEnrollClicked(this.title);
+    // const enrollService = new EnrollService();
+    this.enrollService.onEnrollClicked(this.title);
   }
 
 }

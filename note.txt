@@ -153,3 +153,7 @@ import { Directive } from "@angular/core";
 
 45: Services in Angular
 - Services là một type script có thể tái sử dụng, có thể được sử dụng trong nhiều component trong angular app.
+
+
+47: Dependency injection
+-
