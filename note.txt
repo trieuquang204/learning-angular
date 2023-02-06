@@ -165,3 +165,7 @@ import { Directive } from "@angular/core";
 
 
 49: Creating a Data Service
+
+
+50: Injecting Service into another Service
+- Injectable
