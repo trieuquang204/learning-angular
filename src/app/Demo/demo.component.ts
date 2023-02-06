@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 
-import { UserService } from '../Services/user.service';
+import { DataService } from '../Services/data.service';
+
 
 @Component({
   selector: 'app-demo',
@@ -10,15 +11,16 @@ import { UserService } from '../Services/user.service';
 export class DemoComponent implements OnInit  {
   title = "Angular";
 
-  constructor(private userService : UserService) {
+  constructor(private dataService: DataService) {
     console.log('constructor')
   }
 
-  user: { name: string, job: string, gender: string, country: string,  age: number };
 
   ngOnInit() {
-    this.userService.onShowDetailClicked.subscribe((data: { name: string, job: string, gender: string, country: string,  age: number }) => {
-      this.user = data;
+    this.dataService.dataEmitter.subscribe((data) => {
+      this.inputText = data;
     })
   }
+
+  inputText: string = '';
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { DataService } from "../Services/data.service";
 
-import { UserService } from "../Services/user.service";
 
 @Component({
   selector: 'app-container',
@@ -10,18 +10,19 @@ import { UserService } from "../Services/user.service";
 export class ContainerComponent implements OnInit  {
 
 
-  constructor(private userService : UserService) {
+  constructor(private dataService : DataService) {
 
   }
 
-  users: { name: string, job: string, gender: string, country: string,  age: number }[] = [];
 
   ngOnInit() {
-    this.users = this.userService.users;
+    // this.users = this.userService.users;
   }
 
-  showDetails(user: { name: string, job: string, gender: string, country: string,  age: number } ) {
-    this.userService.showUserDetails(user)
+  enterText: string = '';
+
+  onBtnClick() {
+    this.dataService.raiseDataEmitterEvent(this.enterText);
   }
 
 

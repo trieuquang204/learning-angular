@@ -178,3 +178,7 @@ import { Directive } from "@angular/core";
 53: Error & Completion of Observable
 
 55: Understanding Operators of RxJS
+
+
+56: Subjects in RxJS
+Subjects are like EventEmitters
