@@ -6,26 +6,24 @@ import { UserService } from "../Services/user.service";
   selector: 'app-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.css'],
-  // providers: [UserService]
-  // Khai báo ở đây sẽ bị overright UserService trong app => user k add đc
 })
 export class ContainerComponent implements OnInit  {
-  username: string = '';
-  status: string = 'active';
 
-  public testttt : string = '';
 
   constructor(private userService : UserService) {
 
   }
 
+  users: { name: string, job: string, gender: string, country: string,  age: number }[] = [];
+
   ngOnInit() {
-
+    this.users = this.userService.users;
   }
 
-  addUser() {
-    this.userService.addNewUser(this.username, this.status);
-    // console.log(this.userService.users)
+  showDetails(user: { name: string, job: string, gender: string, country: string,  age: number } ) {
+    this.userService.showUserDetails(user)
   }
+
+
 
 }

@@ -1,6 +1,8 @@
-<h2>App demo</h2>
-<div class="container">
-  <h3>{{ title }} course </h3>
-
-  <button (click)="onEnroll()">Enroll</button>
+<div class="container" *ngIf="user != undefined">
+  <div>
+    <p>name: {{ user.name }}</p>
+    <p>job: {{ user.job }} </p>
+    <p>country: {{ user.country }} </p>
+    <p>Age: {{ user.age }} </p>
+  </div>
 </div>

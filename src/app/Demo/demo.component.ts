@@ -1,4 +1,6 @@
-import { Component, OnInit, Input, ContentChild, ElementRef, AfterContentInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+
+import { UserService } from '../Services/user.service';
 
 @Component({
   selector: 'app-demo',
@@ -8,16 +10,18 @@ import { Component, OnInit, Input, ContentChild, ElementRef, AfterContentInit } 
 export class DemoComponent implements OnInit  {
   title = "Angular";
 
-  constructor() {
+  constructor(private userService : UserService) {
     console.log('constructor')
   }
 
-  ngOnInit(): void {
-    // console.log('paraElm', this.paraElm)
+  user: { name: string, job: string, gender: string, country: string,  age: number };
+
+  ngOnInit() {
+    this.userService.onShowDetailClicked.subscribe((data: { name: string, job: string, gender: string, country: string,  age: number }) => {
+      this.user = data;
+    })
   }
 
-  onEnroll() {
-    alert('Thanks for ' + this.title + ' course')
-  }
+
 
 }

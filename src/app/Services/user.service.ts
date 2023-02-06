@@ -1,18 +1,18 @@
-import { Injectable } from "@angular/core";
-import { LoggerService } from "./logger.service";
+import { EventEmitter, Injectable } from "@angular/core";
 
 @Injectable()
 export class UserService {
-  constructor(private logger: LoggerService) {}
 
   users = [
-    {name: 'name1', status: 'active'},
-    {name: 'name2', status: 'intive'},
-    {name: 'name3', status: 'active'},
+    {name: 'name1', job: "Teacher", gender: "Male", country: "US",  age: 34},
+    {name: 'name2', job: "Doctor", gender: "Female", country: "Germany",  age: 30},
+    {name: 'name1', job: "Design", gender: "Male", country: "India",  age: 27},
   ]
 
-  addNewUser(name: string, status: string) {
-    this.users.push({name: name, status: status});
-    this.logger.LogMessage(name, status);
+  onShowDetailClicked = new EventEmitter<{ name: string, job: string, gender: string, country: string,  age: number }>();
+
+  showUserDetails(user: { name: string, job: string, gender: string, country: string,  age: number } ) {
+    this.onShowDetailClicked.emit(user)
   }
+
 }
