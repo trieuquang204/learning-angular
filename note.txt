@@ -176,3 +176,5 @@ import { Directive } from "@angular/core";
 
 
 53: Error & Completion of Observable
+
+55: Understanding Operators of RxJS
