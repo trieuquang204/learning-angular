@@ -1,5 +1,6 @@
-<button (click)="displayNotice()">SHow</button>
-
-<div class="test" *appIf="display">
-  <p>This is some text</p>
+<div class="container" [ngSwitch]="occupation">
+  <p *ngSwitchCase="'test1'">para test1</p>
+  <p *ngSwitchCase="'test2'">para test2</p>
+  <p *ngSwitchCase="'test3'">para test3</p>
+  <p *ngSwitchDefault>Default return</p>
 </div>

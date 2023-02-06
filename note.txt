@@ -144,3 +144,7 @@ import { Directive } from "@angular/core";
 - Tại sao cần sử dụng dấu * trước ngIf:
 - Dấu * nói với angular rằng directive là Structural directive sau đó angular sẽ khởi tạo một template là <ng-template>
 </ng-template> wrap content bên trong ngIf
+
+
+44: ngSwitch (Structural directive)
+- Là Structural directive nhưng không sử dụng dấu * đằng trước [ngSwitch] vì nó k thao tác add or remote dom.

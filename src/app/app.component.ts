@@ -9,10 +9,6 @@ import { ContainerComponent } from './Container/container.component';
 export class AppComponent {
   inputText : string = 'initialization app';
 
-  display: boolean = false
-
-  displayNotice() {
-    this.display = !this.display
-  }
+  occupation: string = 'test2đ';
 
 }
