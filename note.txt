@@ -157,3 +157,8 @@ import { Directive } from "@angular/core";
 
 47: Dependency injection
 -
+
+
+48: Hierarchical Injection
+- Sử dụng serve trong component C thì serve đó cũng sẽ đc inject trong các component con c1, c2... của component C.
+- Nếu khái báo providers service trong cả app module cả file app và trong file component class thì cấp độ trong class sẽ overight phần khai báo trong module
