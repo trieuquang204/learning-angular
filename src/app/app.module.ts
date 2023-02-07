@@ -14,12 +14,16 @@ import { HoverDirective } from './CustomDirective/hover.directive';
 import { HostBindingDirective } from './CustomDirective/host-binding.directive';
 import { ClassCustomDirective } from './CustomDirective/class-custom.directive';
 import { IfDirective } from './CustomDirective/if.directive';
+import { ErrorComponent } from './error/error.component';
 
 const appRoute: Routes = [
-  {path: '', component: ContainerComponent},
+  // {path: '', component: ContainerComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: ContainerComponent},
   {path: 'about', component: DemoComponent},
   {path: 'contact', component: CustomListComponent},
+  // This route luôn đứng cuối
+  {path: '**', component: ErrorComponent},
 ]
 
 @NgModule({
@@ -34,6 +38,7 @@ const appRoute: Routes = [
     HostBindingDirective,
     ClassCustomDirective,
     IfDirective,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
