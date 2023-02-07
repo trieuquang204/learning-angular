@@ -1,10 +1,10 @@
 <div class="main-container">
   <div class="nav-container">
     <ul>
-      <li><a  routerLink="">Home</a></li>
-      <li><a  [routerLink]="['/about']">About</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-      <li><a routerLink="/course">Courses</a></li>
+      <li><a routerLinkActive="quangTest" routerLink="" [routerLinkActiveOptions]="{exact: true}" >Home</a></li>
+      <li><a [routerLinkActive]="'quangTest'" [routerLink]="['/about']">About</a></li>
+      <li><a routerLinkActive="quangTest" routerLink="/contact">Contact</a></li>
+      <li><a routerLinkActive="quangTest" routerLink="/course">Courses</a></li>
     </ul>
   </div>
   <div class="component-container">

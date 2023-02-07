@@ -17,8 +17,8 @@ import { IfDirective } from './CustomDirective/if.directive';
 import { ErrorComponent } from './error/error.component';
 
 const appRoute: Routes = [
-  // {path: '', component: ContainerComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '', component: ContainerComponent},
+  // {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: ContainerComponent},
   {path: 'about', component: DemoComponent},
   {path: 'contact', component: CustomListComponent},
