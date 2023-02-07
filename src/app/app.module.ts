@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './Container/container.component';
@@ -13,6 +14,13 @@ import { HoverDirective } from './CustomDirective/hover.directive';
 import { HostBindingDirective } from './CustomDirective/host-binding.directive';
 import { ClassCustomDirective } from './CustomDirective/class-custom.directive';
 import { IfDirective } from './CustomDirective/if.directive';
+
+const appRoute: Routes = [
+  {path: '', component: ContainerComponent},
+  {path: 'home', component: ContainerComponent},
+  {path: 'about', component: DemoComponent},
+  {path: 'contact', component: CustomListComponent},
+]
 
 @NgModule({
   declarations: [
@@ -29,7 +37,8 @@ import { IfDirective } from './CustomDirective/if.directive';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]

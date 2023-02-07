@@ -182,3 +182,16 @@ import { Directive } from "@angular/core";
 
 56: Subjects in RxJS
 Subjects are like EventEmitters
+
+
+57: Unsubscribe to an Observable
+
+
+58: What is Routing in Angular
+- Routing cho phép chúng ta di chuyển view của một component sang view của một component khác!
+b1: Trong app module khai báo appRoute
+- import { Routes, RouterModule } from '@angular/router';
+
+- const appRoute : Routes = [
+  {path: 'Home', component: ...}
+]
