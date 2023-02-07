@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
-import { DataService } from '../Services/data.service';
+
 
 
 @Component({
@@ -11,16 +12,22 @@ import { DataService } from '../Services/data.service';
 export class DemoComponent implements OnInit  {
   title = "Angular";
 
-  constructor(private dataService: DataService) {
+  constructor(private route: Router, private activatedRoute : ActivatedRoute) {
     console.log('constructor')
   }
 
 
   ngOnInit() {
-    this.dataService.dataEmitter.subscribe((data) => {
-      this.inputText = data;
-    })
+
   }
 
-  inputText: string = '';
+  navigateToHome() {
+    // this.route.navigate([''])
+    // c2:
+    this.route.navigateByUrl('')
+
+
+  }
+
+
 }
